@@ -7,7 +7,6 @@ Created on Fri Aug  8 15:01:24 2025
 
 import streamlit as st
 import sys
-import matplotlib.pyplot as plt
 from io import StringIO
 import yagmail
 import yfinance as yf
@@ -444,3 +443,4 @@ if __name__ == "__main__":
     
     attachments = ['FNO_Buy_Report '+datefor[0]+'.xlsx', 'FNO_Sell_Report '+datefor[0]+'.xlsx']
     send_email(receiver_email, subject, body, attachments)    
+
